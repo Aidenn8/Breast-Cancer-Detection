@@ -2,7 +2,7 @@
  
  This project determines if there is breast cancer based off an ultrasound.
  
-[Imgur](https://i.imgur.com/wW2hFsV.jpg)
+[Example](https://i.imgur.com/wW2hFsV.jpg)
 
 ## Algorithm
 
