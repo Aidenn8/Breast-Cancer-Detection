@@ -10,7 +10,9 @@ This project uses a resnet18 model that was retrained with two different sets of
 
 The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset  
 
+
 ## Running this project
+
 
    Setup
    
@@ -18,6 +20,7 @@ The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast
    2) Download the files listed on this github page
    5) Transfer the files downloaded to the jetson-nano to the directory jetson-inference/python/training/classification/ by using an app such as FileZilla
  
+
 
    Execution
 
@@ -31,6 +34,8 @@ The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast
       output.jpg
    5) If you look in your classification directory there will be a file called output.jpg
    6) Display the file to see if there is breast cancer
+
+
       
    Note:  
    
@@ -42,6 +47,7 @@ The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast
     If you like, you can also upload images of ultrasounds found online to the "breast_cancer" or "no_breast_cancer" directories and try running step 4 
     with your own image instead of "malignant8.png" to check if there is breast cancer.
          
+
     
    
 3. Make sure to include any required libraries that need to be installed for your project to run.
