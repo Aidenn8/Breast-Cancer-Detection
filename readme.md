@@ -22,6 +22,8 @@ The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast
  
 
 
+
+
    Execution
 
    1) If you are in the docker container, exit it by pressing ctrl d
@@ -34,6 +36,8 @@ The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast
       output.jpg
    5) If you look in your classification directory there will be a file called output.jpg
    6) Display the file to see if there is breast cancer
+
+
 
 
       
