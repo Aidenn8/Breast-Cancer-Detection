@@ -12,7 +12,7 @@ The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast
 
 ## Running this project
 
-   ###Setup
+   ##Setup
    
    1) Download the jetson-inference container from github to a jetson-nano: https://github.com/dusty-nv/jetson-inference
    2) Download the files listed on this github page
