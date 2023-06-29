@@ -2,13 +2,15 @@
  
  This project determines if there is breast cancer based off an ultrasound.
  
-[Example](https://i.imgur.com/wW2hFsV.jpg)
+[Example](![image](https://github.com/Aidenn8/Breast-Cancer-Detection/assets/138057733/9dab020a-77ff-4b2c-9811-920e98fb49ba)
 
 ## Algorithm
 
 This project uses a resnet18 model that was retrained with two different sets of data. One dataset contained images of ultrasounds that were confirmed to contain malignant breast cancer. Another dataset was consisted of ultrasounds that did not show any evidence of breast cancer. Once the model was retrained, I exported it using the ONNX format. The program uses imagenet.py to determine the whether or not breast cancer is present in an ultrasound. 
 
 The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset  
+
+![image](https://github.com/Aidenn8/Breast-Cancer-Detection/assets/138057733/1c9b8135-0c58-45ba-ba63-2ee68f04e005)
 
 
 ## Running this project
