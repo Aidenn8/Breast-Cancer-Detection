@@ -12,7 +12,7 @@ Add an explanation of the algorithm and how it works. Make sure to include detai
 
 This project uses a resnet18 model that was retrained with two different sets of data. One dataset contained images of ultrasounds that were confirmed to contain malignant breast cancer. Another dataset was consisted of ultrasounds that did not show any evidence of breast cancer. Once the model was retrained, I exported it using the ONNX format. The program uses imagenet.py to determine the whether or not breast cancer is present in an ultrasound. 
 
-The dataset can be found https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset  
+The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset  
 
 ## Running this project
 
