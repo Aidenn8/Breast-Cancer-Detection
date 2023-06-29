@@ -12,14 +12,14 @@ The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast
 
 ## Running this project
 
-   ##Setup
+   Setup
    
    1) Download the jetson-inference container from github to a jetson-nano: https://github.com/dusty-nv/jetson-inference
    2) Download the files listed on this github page
    5) Transfer the files downloaded to the jetson-nano to the directory jetson-inference/python/training/classification/ by using an app such as FileZilla
  
 
-   #Execution
+   Execution
 
    1) If you are in the docker container, exit it by pressing ctrl d
    2) Change directories to jetson-inference/python/training/classification
@@ -32,7 +32,7 @@ The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast
    5) If you look in your classification directory there will be a file called output.jpg
    6) Display the file to see if there is breast cancer
       
-   #Note:  
+   Note:  
    
    In step 4 you can replace "malignant8.png" with any file in the breast_cancer directory and you can rename "output.jpg" to anything you want.
       
