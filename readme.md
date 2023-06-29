@@ -32,13 +32,15 @@ The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast
    5) If you look in your classification directory there will be a file called output.jpg
    6) Display the file to see if there is breast cancer
       
-   Note:    In step 4 you can replace "malignant8.png" with any file in the breast_cancer directory and you can rename "output.jpg" to anything you want.
+   #Note:  
+   
+   In step 4 you can replace "malignant8.png" with any file in the breast_cancer directory and you can rename "output.jpg" to anything you want.
       
-            You can also try using ultrasounds that have no breast cancer by changing "breast_cancer" in step 4 to "no_breast_cancer" and replacing      
-            "malignant8.png" with any file in the "no_breast_cancer" directory.
+   You can also try using ultrasounds that have no breast cancer by changing "breast_cancer" in step 4 to "no_breast_cancer" and replacing      
+   "malignant8.png" with any file in the "no_breast_cancer" directory.
 
-            If you like, you can also upload images of ultrasounds found online to the "breast_cancer" or "no_breast_cancer" directories and try running step 4 
-            with your own image instead of "malignant8.png" to check if there is breast cancer.
+    If you like, you can also upload images of ultrasounds found online to the "breast_cancer" or "no_breast_cancer" directories and try running step 4 
+    with your own image instead of "malignant8.png" to check if there is breast cancer.
          
     
    
