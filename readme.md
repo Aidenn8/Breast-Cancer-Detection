@@ -94,6 +94,4 @@ The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast
 
     
    
-3. Make sure to include any required libraries that need to be installed for your project to run.
-
-[View a video explanation here](video link)
+[View a video explanation here](https://www.youtube.com/watch?v=Vtg-Jqz722k)
