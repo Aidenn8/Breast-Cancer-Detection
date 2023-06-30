@@ -34,14 +34,10 @@ The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast
       no_breast_cancer
 
    8) Make 2 more directories called "breast_cancer" and "no_breast_cancer" in each directory: "train", "val", and "test"
-   9) Move around 5% of the images from the "normal" folder inside of the downloaded "ultrasounds" folder to the jetson-nano to the directory `jetson-  
-      inference/python/training/classification/data/breast_cancer_detection/test/no_breast_cancer`
-   10) Move around 5% of the images from the "malignant" folder inside of the downloaded "ultrasounds" folder to the jetson-nano to the directory `jetson-  
-       inference/python/training/classification/data/breast_cancer_detection/test/breast_cancer`
-   11) Move around 15%-25% of the images from the "normal" folder inside of the downloaded "ultrasounds" folder to the jetson-nano to the directory `jetson-  
-       inference/python/training/classification/data/breast_cancer_detection/val/no_breast_cancer`
-   12) Move around 15%-25% of the images from the "malignant" folder inside of the downloaded "ultrasounds" folder to the jetson-nano to the directory `jetson-  
-       inference/python/training/classification/data/breast_cancer_detection/val/breast_cancer`
+   9) Move around 5% of the images from the "normal" folder inside of the downloaded "ultrasounds" folder to the jetson-nano to the directory `jetson-inference/python/training/classification/data/breast_cancer_detection/test/no_breast_cancer`
+   10) Move around 5% of the images from the "malignant" folder inside of the downloaded "ultrasounds" folder to the jetson-nano to the directory `jetson-inference/python/training/classification/data/breast_cancer_detection/test/breast_cancer`
+   11) Move around 15%-25% of the images from the "normal" folder inside of the downloaded "ultrasounds" folder to the jetson-nano to the directory `jetson-inference/python/training/classification/data/breast_cancer_detection/val/no_breast_cancer`
+   12) Move around 15%-25% of the images from the "malignant" folder inside of the downloaded "ultrasounds" folder to the jetson-nano to the directory `jetson-inference/python/training/classification/data/breast_cancer_detection/val/breast_cancer`
    13) Put the remaining images from the "normal" folder to the directory
        `jetson-inference/python/training/classification/data/breast_cancer_detection/train/no_breast_cancer`
    14) Put the remaining images from the "malignant" folder to the directory
