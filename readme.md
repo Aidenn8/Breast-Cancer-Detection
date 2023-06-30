@@ -22,7 +22,7 @@ The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast
    
    1) Download the jetson-inference container from github to a jetson-nano: https://github.com/dusty-nv/jetson-inference
    3) Change directories into `jetson-inference/python/training/classification/data`
-   4) Create a directory called breast_cancer_detection
+   4) Create a directory called "breast_cancer_detection"
    5) Run this command in the terminal to download the data
       
       `wget https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset/download?datasetVersionNumber=1 -O ultrasounds.tar.gz`
