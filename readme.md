@@ -1,7 +1,9 @@
 # Breast Cancer Detection
  
  This project determines if there is breast cancer based off an ultrasound.
- 
+
+
+![image](![image](https://github.com/Aidenn8/Breast-Cancer-Detection/assets/138057733/ec1322f2-0e7d-4590-926c-bc86db0215ea)
 ![image](https://github.com/Aidenn8/Breast-Cancer-Detection/assets/138057733/9dab020a-77ff-4b2c-9811-920e98fb49ba)
 
 ## Algorithm
