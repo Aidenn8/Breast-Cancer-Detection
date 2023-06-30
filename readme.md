@@ -3,7 +3,7 @@
  This project determines if there is breast cancer based off an ultrasound.
 
 
-![image](![image](https://github.com/Aidenn8/Breast-Cancer-Detection/assets/138057733/ec1322f2-0e7d-4590-926c-bc86db0215ea)
+![image](https://github.com/Aidenn8/Breast-Cancer-Detection/assets/138057733/ec1322f2-0e7d-4590-926c-bc86db0215ea)
 ![image](https://github.com/Aidenn8/Breast-Cancer-Detection/assets/138057733/9dab020a-77ff-4b2c-9811-920e98fb49ba)
 
 ## Algorithm
@@ -25,7 +25,7 @@ The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast
    4) Create a directory called breast_cancer_detection
    5) Run this command in the terminal to download the data
       
-      "wget https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset/download?datasetVersionNumber=1 -O ultrasounds.tar.gz"
+      `wget https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset/download?datasetVersionNumber=1 -O ultrasounds.tar.gz`
       
    6) Make 3 directories called "train, "test", and "val" in the "breast_cancer_detection" directory
    7) Make a .txt file called "labels.txt" in the "breast_cancer_detection" directory and write down the following (in exactly that order)
@@ -34,19 +34,19 @@ The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast
       no_breast_cancer
 
    8) Make 2 more directories called "breast_cancer" and "no_breast_cancer" in each directory: "train", "val", and "test"
-   9) Move around 5% of the images from the "normal" folder inside of the downloaded "ultrasounds" folder to the jetson-nano to the directory "jetson-  
-      inference/python/training/classification/data/breast_cancer_detection/test/no_breast_cancer"
-   10) Move around 5% of the images from the "malignant" folder inside of the downloaded "ultrasounds" folder to the jetson-nano to the directory "jetson-  
-       inference/python/training/classification/data/breast_cancer_detection/test/breast_cancer"
-   11) Move around 15%-25% of the images from the "normal" folder inside of the downloaded "ultrasounds" folder to the jetson-nano to the directory "jetson-  
-       inference/python/training/classification/data/breast_cancer_detection/val/no_breast_cancer"
-   12) Move around 15%-25% of the images from the "malignant" folder inside of the downloaded "ultrasounds" folder to the jetson-nano to the directory "jetson-  
-       inference/python/training/classification/data/breast_cancer_detection/val/breast_cancer"
+   9) Move around 5% of the images from the "normal" folder inside of the downloaded "ultrasounds" folder to the jetson-nano to the directory `jetson-  
+      inference/python/training/classification/data/breast_cancer_detection/test/no_breast_cancer`
+   10) Move around 5% of the images from the "malignant" folder inside of the downloaded "ultrasounds" folder to the jetson-nano to the directory `jetson-  
+       inference/python/training/classification/data/breast_cancer_detection/test/breast_cancer`
+   11) Move around 15%-25% of the images from the "normal" folder inside of the downloaded "ultrasounds" folder to the jetson-nano to the directory `jetson-  
+       inference/python/training/classification/data/breast_cancer_detection/val/no_breast_cancer`
+   12) Move around 15%-25% of the images from the "malignant" folder inside of the downloaded "ultrasounds" folder to the jetson-nano to the directory `jetson-  
+       inference/python/training/classification/data/breast_cancer_detection/val/breast_cancer`
    13) Put the remaining images from the "normal" folder to the directory
-       "jetson-inference/python/training/classification/data/breast_cancer_detection/train/no_breast_cancer"
+       `jetson-inference/python/training/classification/data/breast_cancer_detection/train/no_breast_cancer`
    14) Put the remaining images from the "malignant" folder to the directory
-       "jetson-inference/python/training/classification/data/breast_cancer_detection/train/breast_cancer"
-   15) Make a new directory called "breast_cancer_detection" in "jetson-inference/python/training/classification/models"
+       `jetson-inference/python/training/classification/data/breast_cancer_detection/train/breast_cancer`
+   15) Make a new directory called "breast_cancer_detection" in `jetson-inference/python/training/classification/models`
 
 
 
@@ -54,25 +54,25 @@ The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast
    Execution
 
    1) Change directories to jetson-inference
-   2) Type and run "./docker/run.sh" in the terminal
-   3) Then change directories to "jetson-inference/python/training/classification"
+   2) Type and run `./docker/run.sh` in the terminal
+   3) Then change directories to `jetson-inference/python/training/classification`
    4) Now train the model by running this command in the terminal
-      "python3 train.py --model-dir=models/breast_cancer_detection data/breast_cancer_detection --epochs=150"
+      `python3 train.py --model-dir=models/breast_cancer_detection data/breast_cancer_detection --epochs=150`
 
       Note: This will take approximately 2 hours and 30 minutes
       
    5) Once done, export the model by running this script
 
-      python3 onnx_export.py --model-dir=models/breast_cancer_detection
+      `python3 onnx_export.py --model-dir=models/breast_cancer_detection`
 
    7) If you are in the docker container, exit it by pressing ctrl d
-   8) Change directories to jetson-inference/python/training/classification
+   8) Change directories to `jetson-inference/python/training/classification`
    9) In the terminal enter in
-      "NET=models/breast_cancer_detection" and
-      "DATASET=data/breast_cancer_detection"
+      `NET=models/breast_cancer_detection` and
+      `DATASET=data/breast_cancer_detection`
    9) Then enter in
        
-"imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/breast_cancer/malignant8.png output.jpg"
+`imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/breast_cancer/malignant8.png output.jpg`
        
    10) If you look in your classification directory there will be a file called output.jpg (or whatever you named the output to be)
    11) Display the file to see if there is breast cancer
