@@ -61,10 +61,10 @@ The dataset can be found here: https://www.kaggle.com/datasets/aryashah2k/breast
       
    5) Once done, export the model by running this script
 
-      python3 onnx_export.py --model-dir=models/cat_dog
+      python3 onnx_export.py --model-dir=models/breast_cancer_detection
 
-   6) If you are in the docker container, exit it by pressing ctrl d
-   7) Change directories to jetson-inference/python/training/classification
+   7) If you are in the docker container, exit it by pressing ctrl d
+   8) Change directories to jetson-inference/python/training/classification
    9) In the terminal enter in
       "NET=models/breast_cancer_detection" and
       "DATASET=data/breast_cancer_detection"
